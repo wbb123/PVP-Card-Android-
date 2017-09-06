@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dropCardLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_dropcard">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+             android:id="@+id/btn_returnMain"
+             android:layout_width="@dimen/carddrop_btn_width"
+             android:layout_height="@dimen/carddrop_btn_height"
+             android:layout_centerHorizontal="true"
+             android:background="@drawable/btn_back"
+             android:layout_alignParentTop="true"
+             android:layout_alignParentEnd="true"
+             android:layout_marginEnd="@dimen/carddrop_btn_marginEnd"
+             android:layout_marginTop="@dimen/carddrop_btn_marginBottom" />
+
+        <RelativeLayout
+            android:id="@+id/CardRootM"
+            android:layout_width="@dimen/carddrop_cardlayout_width"
+            android:layout_height="@dimen/carddrop_cardlayout_height"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="#09000000">
+
+        <ImageView
+            android:id="@+id/CardBackM"
+            android:layout_width="@dimen/carddrop_cardlayout_width"
+            android:layout_height="@dimen/carddrop_cardlayout_height"
+            android:layout_centerInParent="true" />
+
+        <ImageView
+            android:id="@+id/CardFrontM"
+            android:layout_width="@dimen/carddrop_cardlayout_width"
+            android:layout_height="@dimen/carddrop_cardlayout_height"
+            android:layout_centerInParent="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/CardRootR"
+            android:layout_width="@dimen/carddrop_cardlayout_width"
+            android:layout_height="@dimen/carddrop_cardlayout_height"
+            android:layout_toEndOf="@id/CardRootM"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="30dp"
+            android:background="#09000000">
+
+        <ImageView
+            android:id="@+id/CardBackR"
+            android:layout_width="@dimen/carddrop_cardlayout_width"
+            android:layout_height="@dimen/carddrop_cardlayout_height"
+            android:layout_centerInParent="true" />
+
+        <ImageView
+            android:id="@+id/CardFrontR"
+            android:layout_width="@dimen/carddrop_cardlayout_width"
+            android:layout_height="@dimen/carddrop_cardlayout_height"
+            android:layout_centerInParent="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/CardRootL"
+            android:layout_width="@dimen/carddrop_cardlayout_width"
+            android:layout_height="@dimen/carddrop_cardlayout_height"
+            android:layout_toStartOf="@id/CardRootM"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="30dp"
+            android:background="#09000000">
+
+               <ImageView
+                   android:id="@+id/CardBackL"
+                   android:layout_width="@dimen/carddrop_cardlayout_width"
+                   android:layout_height="@dimen/carddrop_cardlayout_height"
+                   android:layout_centerInParent="true" />
+
+               <ImageView
+                   android:id="@+id/CardFrontL"
+                   android:layout_width="@dimen/carddrop_cardlayout_width"
+                   android:layout_height="@dimen/carddrop_cardlayout_height"
+                   android:layout_centerInParent="true" />
+               </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="@dimen/carddrop_cardlayout_width_expand"
+            android:layout_height="@dimen/carddrop_cardlayout_height_expand"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/expand_card_marginBot">
+
+            <ImageView
+                android:id="@+id/expanded_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:visibility="invisible"
+                />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+</FrameLayout>
+

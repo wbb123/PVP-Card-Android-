@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_loginpage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/content_height"
+        android:orientation="horizontal"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+        <!-- Button background color&text for test  / Lyris-->
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_weight="0.160"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/register"
+            android:layout_width="0dp"
+            android:layout_weight="0.115"
+            android:layout_height="@dimen/btn_side"
+            android:background="@color/transparent"
+            android:text="@string/testtext"
+            android:layout_gravity="center_vertical"/>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.435"
+            android:layout_height="@dimen/content_height"
+            android:gravity="center"
+            android:paddingTop="@dimen/login_padding_top"
+            android:paddingBottom="@dimen/login_padding_top"
+            android:paddingStart="@dimen/login_padding_left"
+            android:paddingEnd="@dimen/login_padding_right">
+
+            <mangoabliu.finalproject.Layout.FontTextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/user_name"
+                android:textSize="@dimen/label_text"
+                android:textColor="@color/clr_login_text"
+                android:padding="@dimen/login_text_padding"
+                android:layout_alignParentStart="true" />
+
+            <mangoabliu.finalproject.Layout.FontTextView
+                android:id="@+id/password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/password"
+                android:layout_below="@id/username"
+                android:textSize="@dimen/label_text"
+                android:textColor="@color/clr_login_text"
+                android:padding="@dimen/login_text_padding"/>
+
+            <EditText
+                android:id="@+id/usernameText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/username"
+                android:layout_alignBaseline="@id/username"
+                android:maxLines="1"
+                android:inputType="textPassword"
+                android:padding="@dimen/login_edittext_padding"
+                android:textColorHint="#ffffffff"
+                android:textColor="@android:color/black"
+                android:backgroundTint="@android:color/white"
+                android:background="@drawable/edittext"
+                android:imeOptions="flagNoExtractUi|actionNext"/>
+
+            <EditText
+                android:id="@+id/passwordText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/password"
+                android:layout_alignBaseline="@id/password"
+                android:layout_alignStart="@id/usernameText"
+                android:textColorHint="#ffffffff"
+                android:textColor="@android:color/black"
+                android:backgroundTint="@android:color/white"
+                android:background="@drawable/edittext"
+                android:maxLines="1"
+                android:inputType="textPassword"
+                android:padding="@dimen/login_edittext_padding"
+                android:imeOptions="flagNoExtractUi"/>
+            <CheckBox
+                android:id="@+id/cb_showpassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/password"
+                android:textColor="@color/clr_login_text"
+                android:text="@string/login_cipher_pw"
+                android:textSize="@dimen/cb_text"/>
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/login"
+            android:layout_weight="0.115"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/btn_side"
+            android:background="@color/transparent"
+            android:text="@string/testtext"
+            android:layout_gravity="center_vertical"/>
+        <Space
+            android:layout_width="0dp"
+            android:layout_weight="0.170"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+</RelativeLayout>

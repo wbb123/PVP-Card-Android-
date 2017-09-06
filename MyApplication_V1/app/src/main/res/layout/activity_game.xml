@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/myLayout"
+    android:background="@drawable/bg_mappage">
+
+    <!--Button User Icon-->
+    <Button
+        android:id="@+id/userProfile"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="@dimen/map_icon_marginStart"
+        android:layout_marginTop="@dimen/map_icon_marginTop"
+        android:background="@color/transparent"/>
+
+    <!--Button Fight-->
+    <ImageButton
+        android:id="@+id/fight"
+        android:background="@drawable/btn_fight"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/map_btnFight_marginEnd"
+        android:layout_marginBottom="@dimen/map_btnFight_marginBottom"/>
+
+    <!--TextView Distance-->
+    <mangoabliu.finalproject.Layout.FontTextView
+        android:id="@+id/distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        android:text="0 Miles"
+        android:shadowColor="@color/clr_map_shadow"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="3"
+        android:textSize="@dimen/map_dist_textsize"
+        android:textColor="@color/clr_map_text" />
+
+
+
+
+    <!--Planet Button Layout-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <!--Planet Button Layout left1-->
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.273"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20dp">
+            <Button
+                android:id="@+id/location1"
+                android:layout_width="@dimen/map_btnLoc1_size"
+                android:layout_height="@dimen/map_btnLoc1_size"
+                android:background="@color/transparent"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+        <!--Planet Button Layout Left2-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.239"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.463"
+                android:gravity="center_vertical">
+
+                <Button
+                    android:id="@+id/location3"
+                    android:layout_width="@dimen/map_btnLoc3_size"
+                    android:layout_height="@dimen/map_btnLoc3_size"
+                    android:background="@color/transparent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="@dimen/map_R3_marginPadding"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.537"
+                android:gravity="center">
+                <Button
+                    android:id="@+id/location2"
+                    android:layout_width="@dimen/map_btnLoc2_size"
+                    android:layout_height="@dimen/map_btnLoc2_size"
+                    android:background="@color/transparent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginBottom="@dimen/map_R2_marginBottom"/>
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+
+
+        <!--Planet Button Layout Right1-->
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.154"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/map_R4_marginBottom">
+            <Button
+                android:id="@+id/location4"
+                android:layout_width="@dimen/map_btnLoc4_size"
+                android:layout_height="@dimen/map_btnLoc4_size"
+                android:background="@color/transparent"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+
+        <!--Planet Button Layout Right2-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.333"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.676"
+                android:gravity="center"
+                android:layout_marginEnd="@dimen/map_R5_marginEnd">
+                <Button
+                    android:id="@+id/location5"
+                    android:layout_width="@dimen/map_btnLoc5_size"
+                    android:layout_height="@dimen/map_btnLoc5_size"
+                    android:background="@color/transparent" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.324">
+                <Button
+                    android:id="@+id/location6"
+                    android:layout_width="@dimen/map_btnLoc6_size"
+                    android:layout_height="@dimen/map_btnLoc6_size"
+                    android:background="@color/transparent"
+                    android:layout_margin="@dimen/map_R6_marginPadding"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>

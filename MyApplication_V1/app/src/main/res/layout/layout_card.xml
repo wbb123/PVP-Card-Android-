@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/card_layout_width"
+    android:layout_height="@dimen/card_layout_height"
+    android:background="@drawable/card_back"
+    android:id="@+id/card_layout">
+    <TextView
+        android:id="@+id/card_hp"
+        android:layout_width="@dimen/card_hp_width"
+        android:layout_height="@dimen/card_hp_height"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:padding="@dimen/card_hp_padding"
+        android:text="@string/testvalue"
+        android:textSize="@dimen/card_hp_textsize"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/card_attack"
+            android:layout_width="@dimen/card_atk_width"
+            android:layout_height="@dimen/card_atk_height"
+            android:padding="@dimen/card_atk_padding"
+            android:layout_marginStart="@dimen/card_atk_marginleft"
+            android:layout_marginBottom="@dimen/card_atk_marginbottom"
+            android:text="@string/testvalue"
+            android:textSize="@dimen/card_atk_textsize"/>
+        <TextView
+            android:id="@+id/card_armor"
+            android:layout_width="@dimen/card_atk_width"
+            android:layout_height="@dimen/card_atk_height"
+            android:padding="@dimen/card_atk_padding"
+            android:layout_alignBaseline="@+id/card_attack"
+            android:layout_toEndOf="@+id/card_attack"
+            android:text="@string/testvalue"
+            android:textSize="@dimen/card_atk_textsize"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

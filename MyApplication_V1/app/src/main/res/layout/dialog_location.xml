@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialogFull"
+    android:orientation="vertical"
+    android:layout_width="@dimen/location_side"
+    android:layout_height="@dimen/location_side"
+    android:layout_gravity="center"
+    android:background="@drawable/destination">
+
+
+    <mangoabliu.finalproject.Layout.FontTextView
+        android:id="@+id/locationDialogTitle"
+        android:layout_width="@dimen/location_text_width"
+        android:layout_height="@dimen/location_text_height"
+        android:paddingTop="@dimen/location_text_padding"
+        android:layout_marginStart="@dimen/location_text_marginStart"
+        android:text=""
+        android:textSize="@dimen/location_text"
+        android:shadowColor="@color/clr_loc_shadow"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="2"
+        android:textColor="@color/clr_loc_text"
+        android:background="@color/transparent"/>
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginEnd="@dimen/location_inner_margin"
+        android:layout_marginBottom="@dimen/location_inner_margin">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true">
+        <ImageView
+            android:id="@+id/expanded_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible" />
+        </RelativeLayout>
+
+        <ImageButton
+            android:id="@+id/locationImage"
+            android:layout_width="@dimen/location_img_width"
+            android:layout_height="@dimen/location_img_height"
+            android:src="@drawable/card_back"
+            android:layout_centerInParent="true"
+            android:scaleType="centerInside"
+            android:background="@color/transparent"/>
+
+        <!--<ImageButton-->
+            <!--android:id="@+id/dropCard"-->
+            <!--android:background="@drawable/btn_drop"-->
+            <!--android:layout_width="@dimen/location_btn_drop_width"-->
+            <!--android:layout_height="@dimen/location_btn_drop_height"-->
+            <!--android:layout_marginStart="20dp"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_toEndOf="@+id/locationImage" />-->
+        <!--<Button-->
+            <!--android:id="@+id/locationDialogCancel"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="@string/cancel"-->
+            <!--android:layout_below="@+id/dropCard"-->
+            <!--android:layout_alignStart="@+id/dropCard"-->
+            <!--android:layout_alignEnd="@+id/dropCard" />-->
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/locationAction"
+        android:layout_width="@dimen/location_btn_go"
+        android:layout_height="@dimen/location_btn_go"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="@dimen/location_btn_margin"
+        android:layout_marginEnd="@dimen/location_btn_margin"
+        android:background="@drawable/btn_forbid"
+        />
+
+
+</RelativeLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/userProfileDialog"
+    android:background="@drawable/bg_userprofile1">
+
+    <mangoabliu.finalproject.Layout.FontTextView
+        android:id="@+id/usernameProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:paddingStart="@dimen/userfile_username_paddingStart"
+        android:paddingTop="@dimen/userfile_username_paddingTop"
+        android:text="@string/UserName"
+        android:textSize="@dimen/userfile_username_textsize"
+        android:textColor="@color/userProfileDialog_UserNameColor"
+        />
+
+    <Button
+        android:id="@+id/userProfileDialogCancel"
+        android:layout_width="@dimen/carddrop_btn_width"
+        android:layout_height="@dimen/carddrop_btn_height"
+        android:background="@drawable/btn_back"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="@dimen/userfile_btn_marginEnd"/>
+
+
+
+        <GridView
+            android:id="@+id/gridview"
+            android:layout_below="@+id/userIcon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/userfile_scroll_marginTop"
+            android:layout_marginBottom="@dimen/userfile_scroll_marginBottom"
+            android:layout_marginStart="@dimen/userfile_scroll_marginHorizontal"
+            android:layout_marginEnd="@dimen/userfile_scroll_marginHorizontal"
+            android:columnWidth="100dp"
+            android:numColumns="3"
+            android:stretchMode="spacingWidthUniform"
+            android:horizontalSpacing="5dp"
+            android:verticalSpacing="5dp"
+            android:layout_gravity="center"
+          />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignLeft="@+id/gridview"
+        android:layout_alignTop="@+id/gridview"
+        android:layout_alignRight="@+id/gridview"
+        android:layout_alignBottom="@+id/gridview">
+
+        <ImageView
+            android:id="@+id/expandedCard"
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:visibility="invisible"/>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/userIcon"
+        android:layout_width="@dimen/userfile_icon_width"
+        android:layout_height="@dimen/userfile_icon_height"
+        android:src="@drawable/usericon"
+        android:layout_alignBottom="@+id/userProfileDialogCancel"
+        android:visibility="invisible"
+        android:layout_alignStart="@+id/gridview" />
+
+
+</RelativeLayout>

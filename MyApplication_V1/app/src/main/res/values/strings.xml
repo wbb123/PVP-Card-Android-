@@ -1,0 +1,64 @@
+<resources>
+
+    <string name="app_name">MarvelBattle</string>
+
+    <!-- activity_menu -->
+    <string name="menu_hint">Touch to Start Battle...</string>
+
+    <!-- activity_login & activity_registration -->
+    <string name="user_name">USERNAME :</string>
+    <string name="password">PASSWORD :</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="register_now">Register Now</string>
+    <string name="cancel">Cancel</string>
+    <string name="confirm_password">CONFIRM:</string>
+    <string name="login_cipher_pw">Display Password ?</string>
+
+    <!-- activity_map &userfile -->
+    <string name="confirm_to_exit">Confirm to exit?</string>
+    <string name="NOTICE">NOTICE</string>
+    <string name="Confirm">Confirm</string>
+    <string name="location1">1</string>
+    <string name="location2">2</string>
+    <string name="location3">3</string>
+    <string name="location4">4</string>
+    <string name="location5">5</string>
+    <string name="DropCard">Drop Card</string>
+    <string name="Go">Go</string>
+    <string name="Back">BACK</string>
+    <string name="UserName">UserName</string>
+
+    <!-- activity_carddrop cards name-->
+    <string-array name="cards_name">
+        <item>card_ssr_spiderman</item>
+        <item>card_ssr_ca</item>
+        <item>card_ssr_dr</item>
+        <item>card_sr_blackwidow</item>
+        <item>card_sr_thor</item>
+        <item>card_sr_wolverine</item>
+        <item>card_sr_deadpool</item>
+        <item>card_sr_ironman</item>
+        <item>card_sr_loki</item>
+        <item>card_r_beast</item>
+        <item>card_r_hawkeye</item>
+        <item>card_r_hulk</item>
+        <item>card_r_magneto</item>
+        <item>card_r_mystique</item>
+        <item>card_r_panther</item>
+        <item>card_r_torch</item>
+        <item>card_r_vision</item>
+        <item>card_r_winter</item>
+    </string-array>
+
+    <!-- activity_battle-->
+    <string name="battle_searching_text">Searching...</string>
+
+
+    <!-- dialog_location -->
+
+
+    <!-- for test layout / Lyris -->
+    <string name="testtext"></string>
+    <string name="testvalue"></string>
+</resources>

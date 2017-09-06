@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/setting_width"
+    android:layout_height="@dimen/setting_height"
+    android:layout_gravity="center"
+    android:id="@+id/rl_setting"
+    android:background="#A000"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:id="@+id/rl_seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageButton
+            android:layout_width="@dimen/setting_imagebtn"
+            android:layout_height="@dimen/setting_imagebtn"
+            android:id="@+id/btnMute"
+            android:layout_marginStart="@dimen/setting_margin"
+            android:layout_alignParentStart="true"/>
+
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/btnMute"
+            android:layout_alignBaseline="@id/btnMute"
+            android:focusable="true"
+            android:maxHeight="@dimen/setting_seekbar_progress"
+            android:minHeight="@dimen/setting_seekbar_progress"
+            android:paddingStart="@dimen/setting_seekbar_padding"
+            android:paddingEnd="@dimen/setting_seekbar_padding"
+            android:id="@+id/seekBar"
+            android:thumb="@drawable/seekbar_thumb"
+            android:progressDrawable="@drawable/progress_holo_light"/>
+        <CheckBox
+            android:id="@+id/cb_musicswitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Music"
+            android:layout_below="@+id/btnMute"
+            android:layout_alignStart="@id/btnMute"
+            android:layout_marginRight="@dimen/setting_checkbox_padding"/>
+        <CheckBox
+            android:id="@+id/cb_soundswitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/cb_musicswitch"
+            android:layout_toEndOf="@+id/cb_musicswitch"
+            android:text="Sound"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

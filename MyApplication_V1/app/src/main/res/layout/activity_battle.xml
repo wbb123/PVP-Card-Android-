@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/bg_battle_noborder"
+    >
+    <!--Searching border&planet-->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/battle_border1"
+        android:id="@+id/imageView_battle_border"/>
+
+    <!--other User Name-->
+
+    <TextView
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="45dp"
+        android:textSize="30sp"
+        android:id="@+id/textView_otherUserName" />
+
+    <!-- my User Name -->
+    <TextView
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="47dp"
+        android:textSize="30sp"
+        android:id="@+id/textView_myUserName" />
+
+    <!--另一边的卡-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/battle_line"
+        android:layout_alignParentEnd="true">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/battle_other_player_area_margin_top"
+                android:layout_marginRight="@dimen/battle_other_player_area_margin_right"
+                android:gravity="right">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/battle_player_area_margin_left"
+                    android:id="@+id/relatvieLayout_battle_otherCard_container_1"
+                    >
+
+                    <mangoabliu.finalproject.Layout.CardLayout
+                        android:layout_width="@dimen/battle_card_width"
+                        android:layout_height="@dimen/battle_card_height"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/card_battle_otherside_card_1"
+                        >
+
+                    </mangoabliu.finalproject.Layout.CardLayout>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/battle_player_area_margin_left"
+                    android:id="@+id/relatvieLayout_battle_otherCard_container_2"
+                    >
+                    <mangoabliu.finalproject.Layout.CardLayout
+                        android:layout_width="@dimen/battle_card_width"
+                        android:layout_height="@dimen/battle_card_height"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/card_battle_otherside_card_2"
+                        >
+
+                    </mangoabliu.finalproject.Layout.CardLayout>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/battle_player_area_margin_left"
+                    android:id="@+id/relatvieLayout_battle_otherCard_container_3">
+
+                    <mangoabliu.finalproject.Layout.CardLayout
+                        android:layout_width="@dimen/battle_card_width"
+                        android:layout_height="@dimen/battle_card_height"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/card_battle_otherside_card_3"
+                        >
+
+                    </mangoabliu.finalproject.Layout.CardLayout>
+                </RelativeLayout>
+
+            </TableRow>
+        </TableLayout>
+    </RelativeLayout>
+
+
+    <mangoabliu.finalproject.Layout.FontTextView
+        android:text=""
+        android:textSize="20sp"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView_battle_turn"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"
+        android:id="@+id/battle_line"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout_battle_waiting_otherside"
+        android:background="@drawable/battle_waiting_otherside"
+        android:layout_above="@+id/battle_line"
+        android:layout_alignParentStart="true">
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/battle_line"
+        android:layout_alignParentStart="true">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/battle_player_area_margin_top"
+                android:layout_marginLeft="@dimen/battle_player_area_margin_left">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/battle_player_area_margin_left"
+                    android:id="@+id/relatvieLayout_battle_mycard_container_1">
+                    <mangoabliu.finalproject.Layout.CardLayout
+                        android:layout_width="@dimen/battle_card_width"
+                        android:layout_height="@dimen/battle_card_height"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/card_battle_mycard_1"
+                        >
+
+                    </mangoabliu.finalproject.Layout.CardLayout>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/battle_player_area_margin_left"
+                    android:id="@+id/relatvieLayout_battle_mycard_container_2">
+                    <mangoabliu.finalproject.Layout.CardLayout
+                        android:layout_width="@dimen/battle_card_width"
+                        android:layout_height="@dimen/battle_card_height"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/card_battle_mycard_2"
+
+                        >
+
+                    </mangoabliu.finalproject.Layout.CardLayout>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/battle_player_area_margin_left"
+                    android:id="@+id/relatvieLayout_battle_mycard_container_3">
+
+                    <mangoabliu.finalproject.Layout.CardLayout
+                        android:layout_width="@dimen/battle_card_width"
+                        android:layout_height="@dimen/battle_card_height"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/card_battle_mycard_3"
+                        >
+
+                    </mangoabliu.finalproject.Layout.CardLayout>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/battle_player_area_margin_left">
+
+                    <Button
+                        android:background="@drawable/btn_confirm"
+                        android:layout_width="@dimen/battle_btn_confirm_size"
+                        android:layout_height="@dimen/battle_btn_confirm_size"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="30dp"
+                        android:layout_marginBottom="30dp"
+                        android:id="@+id/btn_battle_choose_card_finished">
+
+                    </Button>
+                </RelativeLayout>
+            </TableRow>
+        </TableLayout>
+    </RelativeLayout>
+
+    <!--Searching bg down-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout_battle_waiting_bg_down"
+        android:background="@drawable/battle_searching_down"
+        android:layout_below="@+id/relativeLayout_battle_waiting_bg_up"
+        android:layout_alignParentStart="true">
+    </RelativeLayout>
+
+    <!--Searching bg up-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout_battle_waiting_bg_up"
+        android:background="@drawable/battle_searching_up"
+        android:layout_above="@+id/battle_line"
+        android:layout_alignParentStart="true">
+    </RelativeLayout>
+
+    <!--Win Or Lose Image-->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/battle_win"
+        android:id="@+id/imageView_win"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/battle_lose"
+        android:id="@+id/imageView_lose"/>
+
+    <!--"Searching rotate icon"-->
+    <ImageView
+        android:layout_width="@dimen/battle_searching_icon"
+        android:layout_height="@dimen/battle_searching_icon"
+        android:src="@drawable/loading"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/imageView_battle_loading" />
+
+    <!--"Searching" 字样-->
+    <mangoabliu.finalproject.Layout.FontTextView
+        android:text="Searching..."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/battle_searching_textsize"
+        android:id="@+id/battle_searching_text" />
+
+    <!--Test Btn-->
+    <Button
+        android:text="Test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="31dp"
+        android:id="@+id/btn_battle_test"
+        />
+    <Button
+        android:layout_width="@dimen/battle_btn_exit_width"
+        android:layout_height="@dimen/battle_btn_exit_height"
+        android:layout_marginEnd="19dp"
+        android:layout_marginBottom="144dp"
+        android:id="@+id/btn_battle_exit"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/btn_back"/>
+
+
+
+</RelativeLayout>
